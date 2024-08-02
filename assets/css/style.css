@@ -9,8 +9,17 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'Itim';
+	src: url('../../fonts/itim/Itim-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: "Itim", sans-serif;;
+}
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Itim", sans-serif;
   color: #444444;
 }
 
@@ -30,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Itim", sans-serif;
 }
 
 #main {
@@ -140,8 +149,8 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
+  font-family: "Itim", sans-serif;
+  font-size: 20px;
   font-weight: 600;
   color: #565e49;
   white-space: nowrap;
@@ -361,6 +370,7 @@ h6 {
   position: relative;
   margin-bottom: -140px;
   z-index: 1;
+  border-radius: 20px;
 }
 
 #hero:before {
@@ -376,19 +386,19 @@ h6 {
 #hero .hero-container {
   position: absolute;
   bottom: 0;
-  top: 0;
-  left: 0;
+  top: 100px;
+  left: 60px;
   right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -397,11 +407,11 @@ h6 {
 #hero h2 {
   color: #eee;
   margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 25px;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Itim", sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 1px;
@@ -443,6 +453,8 @@ h6 {
 
   #hero .hero-container {
     padding: 0 15px;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -474,7 +486,7 @@ section {
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Itim", sans-serif;
   color: #646c55;
 }
 
@@ -489,7 +501,8 @@ section {
   padding: 0;
 }
 
-.breadcrumbs .breadcrumb-hero {
+.breadcrumbs .breadcrumb-
+ {
   text-align: center;
   background: #94c045;
   padding: 20px 0;
@@ -532,6 +545,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding-bottom: 15px;
   background: #fff;
+  border-radius: 20px;
 }
 
 .about .count-box {
